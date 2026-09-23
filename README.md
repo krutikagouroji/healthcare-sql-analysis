@@ -22,7 +22,7 @@ GROUP BY gender;
 \`\`\`
 **Finding:** Total no. of male patients are 547 and female patients are 616"
 
-![Gender Query](male%vs%female.png)
+![Gender Query](male-vs-female.png)
 
 ### 2. Top 10 most common conditions
 \`\`\`sql
