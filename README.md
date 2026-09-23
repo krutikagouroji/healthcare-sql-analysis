@@ -32,6 +32,6 @@ GROUP BY description
 ORDER BY condition_count DESC
 LIMIT 10;
 \`\`\`
-**Finding:** [top condition and count]
+**Finding:** 
 
 ![Top Conditions](screenshot-filename.jpeg)
