@@ -46,6 +46,6 @@ ORDER BY patient_count DESC
 LIMIT 10;
 \`\`\`
 **Findings:**
-![State/county with most patients](State-and-county-most-patients.png)
+![State/county with most patients](State-and-county-with-most-patients.png)
 
 
