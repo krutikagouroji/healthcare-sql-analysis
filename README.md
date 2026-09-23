@@ -49,4 +49,13 @@ LIMIT 8;
 
 ![State/county with most patients](State-and-county-with-most-patients.png)
 
+### 4. Average total_claim_cost by encounterclass
+\`\`\sql
+SELECT encounterclass, ROUND(AVG(total_claim_cost) :: numeric, 2) AS avg_cost
+FROM encounters
+GROUP BY encounterclass
+ORDER BY avg_cost DESC;
+\`\`\`
+**Findings** Inpatient encounters had the highest average cost at $8,766.00, followed by emergency visits at $7,926.41. Ambulatory ($6,524.19) and urgent care ($5,798.27) encounters were moderately priced, while outpatient ($2,827.51) and wellness visits ($1,909.49) were the least expensive. This pattern aligns with expected healthcare cost trends - encounters requiring hospitalization or emergency intervention cost significantly more than routine or preventive care visits.
 
+![Avg total_claim_cost by encounters](Avg-total_claim_cost-by-encounterclass.png)
