@@ -69,7 +69,7 @@ GROUP BY reasondescription
 ORDER BY reason_count DESC
 LIMIT 10;
 \`\`\`
-**Findings:** Finding: "Normal pregnancy" was the most common reason for encounters (3,931 cases), followed by "Hyperlipidemia" (2,489) and "Chronic congestive heart failure" (1,713). Respiratory conditions such as viral sinusitis (1,454) and acute bronchitis (787) also featured prominently, showing a mix of routine maternity care and chronic disease management driving encounter volume.
+**Findings:** "Normal pregnancy" was the most common reason for encounters (3,931 cases), followed by "Hyperlipidemia" (2,489) and "Chronic congestive heart failure" (1,713). Respiratory conditions such as viral sinusitis (1,454) and acute bronchitis (787) also featured prominently, showing a mix of routine maternity care and chronic disease management driving encounter volume.
 
 ![Most common reasondescription for encounters](Most-common-reasondescription-for-encounters.png)
 
@@ -81,7 +81,7 @@ FROM encounters e
 WHERE e.patient IN (SELECT DISTINCT patient FROM conditions WHERE description ILIKE '%diabetes%')
 GROUP BY e.patient) sub;
 \`\`\`
-**Findings:** Finding: Patients diagnosed with diabetes had an average of 79.35 encounters each — significantly higher than what would be expected for a general patient, reflecting the ongoing monitoring, management, and complications typically associated with chronic conditions like diabetes.
+**Findings:** Patients diagnosed with diabetes had an average of 79.35 encounters each — significantly higher than what would be expected for a general patient, reflecting the ongoing monitoring, management, and complications typically associated with chronic conditions like diabetes.
 
 ![Average encounters for patients with diabetes](Average-encounters-for-patients-with-diabetes.png)
 
@@ -92,7 +92,7 @@ FROM conditions c
 JOIN immunizations i 
 ON c.patient = i.patient AND c.start = i.date;
 \`\`\`
-**Findings:** Finding: 5,712 instances were found where a patient had both a condition diagnosis and an immunization recorded on the same date, suggesting these were often combined visits — for example, a routine check-up where both a new diagnosis and a scheduled vaccination occurred together.
+**Findings:** 5,712 instances were found where a patient had both a condition diagnosis and an immunization recorded on the same date, suggesting these were often combined visits — for example, a routine check-up where both a new diagnosis and a scheduled vaccination occurred together.
 
 ![Patients with both a condition and immunization on the same day](Patients-with-both-a-condition-and-immunization-on-the-same-day.png)
 
@@ -103,7 +103,7 @@ FROM encounters e
 JOIN conditions c ON e.patient = c.patient AND e.id = c.encounter
 WHERE c.description ILIKE '%cystitis%';
 \`\`\`
-**Findings:** Finding: Encounters associated with a cystitis diagnosis totaled $80,693.75 in claim costs across the dataset, reflecting the cumulative cost of treating this common urinary tract condition among the patient population.
+**Findings:** Encounters associated with a cystitis diagnosis totaled $80,693.75 in claim costs across the dataset, reflecting the cumulative cost of treating this common urinary tract condition among the patient population.
 
 ![Total cost of encounters linked to cystitis](Total-cost-of-encounters-linked-to-cystitis.png)
 
@@ -126,7 +126,7 @@ FROM (
 GROUP BY age_group
 ORDER BY encounter_count DESC;
 \`\`\`
-**Findings:** Finding: The 35-54 age group had the highest number of encounters (16,245), closely followed by 18-34 (15,821) and 55-74 (13,149). Encounters were lowest among the 75+ age group (6,446), likely reflecting a smaller population size in that bracket. This suggests working-age and middle-aged adults account for the bulk of healthcare utilization in this dataset.
+**Findings:** The 35-54 age group had the highest number of encounters (16,245), closely followed by 18-34 (15,821) and 55-74 (13,149). Encounters were lowest among the 75+ age group (6,446), likely reflecting a smaller population size in that bracket. This suggests working-age and middle-aged adults account for the bulk of healthcare utilization in this dataset.
 
 ![Age group with highest number of encounters](Age-group-with-highest-number-of-encounters.png)
 
