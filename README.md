@@ -43,9 +43,10 @@ SELECT state, county, COUNT(*) AS patient_count
 FROM patients
 GROUP BY state, county
 ORDER BY patient_count DESC
-LIMIT 10;
+LIMIT 8;
 \`\`\`
-**Findings:**
+**Findings:** All top patient locations were in Massachusetts, indicating this synthetic dataset is centered on that state. Middlesex County had the most patients (241), followed by Suffolk County (136) and Essex County (132). The remaining counties in the top 8 - Norfolk, Worcester, Bristol, Plymouth, and Hampden - ranged between 77 and 123 patients each.
+
 ![State/county with most patients](State-and-county-with-most-patients.png)
 
 
