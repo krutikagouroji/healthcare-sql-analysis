@@ -10,7 +10,7 @@ patient demographics, condition prevalence, healthcare costs, and utilization pa
 - Source: [Synthea Synthetic Patient Generator](https://synthea.mitre.org/)
 
 ## Tools Used
-PostgreSQL, pgAdmin
+PostgreSQL, pgAdmin, Tableau Public
 
 ## Tableau Dashboard
 
