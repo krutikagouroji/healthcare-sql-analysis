@@ -12,28 +12,6 @@ patient demographics, condition prevalence, healthcare costs, and utilization pa
 ## Tools Used
 PostgreSQL, pgAdmin, Tableau Public
 
-## Tableau Dashboard
-
-An interactive Tableau dashboard was created to complement the SQL analysis and provide visual insights into patient demographics, healthcare costs, clinical conditions, immunizations, and encounter patterns.
-
-### Dashboards
-
-- Healthcare Clinical Data Dashboard
-- Clinical Conditions and Immunizations
-- Encounter Analysis
-
-### Dashboard Screenshots
-
-![Healthcare Clinical Data Dashboard](healthcare-clinical-data-dashboard.png)
-
-![Clinical Conditions and Immunizations](clinical-conditions-and-immunizations.png)
-
-![Encounter Analysis](encounter-analysis.png)
-
-### Tableau Public
-
-[View Interactive Tableau Dashboard](https://public.tableau.com/views/HealthcareClinicalDataAnalytics/HealthcareClinicalDataDashboard)
-
 ## Key Questions & Findings
 
 ### 1. Gender distribution of patients
@@ -151,4 +129,26 @@ ORDER BY encounter_count DESC;
 **Findings:** The 35-54 age group had the highest number of encounters (16,245), closely followed by 18-34 (15,821) and 55-74 (13,149). Encounters were lowest among the 75+ age group (6,446), likely reflecting a smaller population size in that bracket. This suggests working-age and middle-aged adults account for the bulk of healthcare utilization in this dataset.
 
 ![Age group with highest number of encounters](Age-group-with-highest-number-of-encounters.png)
+
+## Tableau Dashboard
+
+An interactive Tableau dashboard was created to complement the SQL analysis and provide visual insights into patient demographics, healthcare costs, clinical conditions, immunizations, and encounter patterns.
+
+### Dashboards
+
+- Healthcare Clinical Data Dashboard
+- Clinical Conditions and Immunizations
+- Encounter Analysis
+
+### Dashboard Screenshots
+
+![Healthcare Clinical Data Dashboard](healthcare-clinical-data-dashboard.png)
+
+![Clinical Conditions and Immunizations](clinical-conditions-and-immunizations.png)
+
+![Encounter Analysis](encounter-analysis.png)
+
+### Tableau Public
+
+[View Interactive Tableau Dashboard](https://public.tableau.com/views/HealthcareClinicalDataAnalytics/HealthcareClinicalDataDashboard)
 
