@@ -12,6 +12,28 @@ patient demographics, condition prevalence, healthcare costs, and utilization pa
 ## Tools Used
 PostgreSQL, pgAdmin
 
+## Tableau Dashboard
+
+An interactive Tableau dashboard was created to complement the SQL analysis and provide visual insights into patient demographics, healthcare costs, clinical conditions, immunizations, and encounter patterns.
+
+### Dashboards
+
+- Healthcare Clinical Data Dashboard
+- Clinical Conditions and Immunizations
+- Encounter Analysis
+
+### Dashboard Screenshots
+
+![Healthcare Clinical Data Dashboard](healthcare-clinical-data-dashboard.png)
+
+![Clinical Conditions and Immunizations](clinical-conditions-and-immunizations.png)
+
+![Encounter Analysis](encounter-analysis.png)
+
+### Tableau Public
+
+[View Interactive Tableau Dashboard](https://public.tableau.com/views/HealthcareClinicalDataAnalytics/HealthcareClinicalDataDashboard)
+
 ## Key Questions & Findings
 
 ### 1. Gender distribution of patients
